@@ -178,8 +178,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-2">
-                        <div class="col-md-12">
+                        <div class="row mb-2">
+                            <div class="col-md-12">
                             <label for="">Lokasi</label><br>
                             <button type="button" id="manualtikor" class="btn btn-sm btn-primary">Manual</button>
                             <button type="button" id="autotikor" class="btn btn-sm btn-primary">Otomatis</button>
@@ -190,7 +190,9 @@
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" name="long" id="long" placeholder="Ex : 119.89364057321774">
                                 </div>
-                                <div class="mt-2 container" id="mapid" style="width: 100%; height: 450px"></div>
+                                <div class="container">
+                                    <div class="mt-2 container" id="mapid" style="width: 100%; height: 450px"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -482,11 +484,12 @@
         $('#locahide').show();
         $('#mapid').hide();
         getLocation();
-
+        
     });
-
+    
     $('#manualtikor').click(function() {
         $('#locahide').show();
+        $('#mapid').show();
     });
 
     // Js Edit Daata
